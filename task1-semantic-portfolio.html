@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bilwanth | B.Tech CSE Student & Web Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Bilwanth, a Computer Science and Engineering student at SRM AP building Java and web projects.">
+  <meta name="author" content="Bilwanth">
+  <meta name="keywords" content="Bilwanth, portfolio, CSE student, Java, HTML5, web developer, SRM AP">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="canonical" href="https://example.com/">
+
+  <!-- Open Graph / social sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bilwanth | Web Developer Portfolio">
+  <meta property="og:description" content="Projects, skills and contact details of Bilwanth, B.Tech CSE student.">
+  <meta property="og:url" content="https://example.com/">
+  <meta name="twitter:card" content="summary">
+
+  <!-- Only style in Task 1: make the skip link visible on keyboard focus -->
+  <style>
+    .skip-link { position: absolute; left: -999px; }
+    .skip-link:focus { left: 8px; top: 8px; background: #fff; padding: 8px; z-index: 10; }
+    .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+    body { font-family: system-ui, sans-serif; line-height: 1.6; max-width: 60rem; margin: auto; padding: 1rem; }
+  </style>
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header role="banner">
+    <h1>Bilwanth</h1>
+    <p>B.Tech Computer Science and Engineering student</p>
+
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About me</h2>
+      <figure>
+        <img src="profile.jpg" alt="Portrait of Bilwanth smiling, wearing a dark shirt" width="200" height="200">
+        <figcaption>Bilwanth, 3rd semester, SRM AP</figcaption>
+      </figure>
+      <p>I am a Computer Science and Engineering student at SRM AP. I enjoy building Java applications and learning how the web works, from HTML structure to server logic.</p>
+    </section>
+
+    <section id="skills" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <ul>
+        <li>Java (OOP, collections, sockets)</li>
+        <li>HTML5 and accessible markup</li>
+        <li>CSS3 and JavaScript fundamentals</li>
+        <li>Git and GitHub</li>
+      </ul>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+
+      <article aria-labelledby="project-1">
+        <h3 id="project-1">SecureChat</h3>
+        <p>A Java chat application with a Java server and an HTML client, built as a team of four for the end-semester project.</p>
+        <p><time datetime="2026-11">November 2026</time></p>
+        <a href="#" aria-label="View the SecureChat project details">View details</a>
+      </article>
+
+      <article aria-labelledby="project-2">
+        <h3 id="project-2">Java learning pages</h3>
+        <p>A set of roadmap, beginner, medium and advanced Java pages published on my learning website.</p>
+        <a href="#" aria-label="View the Java learning pages project details">View details</a>
+      </article>
+    </section>
+
+    <aside aria-labelledby="now-heading">
+      <h2 id="now-heading">Currently</h2>
+      <p>Preparing for the December 2026 exams while improving my front-end skills.</p>
+    </aside>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>Fields marked with <span aria-hidden="true">*</span><span class="visually-hidden">an asterisk</span> are required.</p>
+
+      <form action="#" method="post" novalidate>
+        <fieldset>
+          <legend>Send me a message</legend>
+
+          <p>
+            <label for="name">Full name <span aria-hidden="true">*</span></label><br>
+            <input type="text" id="name" name="name" autocomplete="name" required aria-required="true">
+          </p>
+
+          <p>
+            <label for="email">Email address <span aria-hidden="true">*</span></label><br>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-required="true" aria-describedby="email-hint">
+            <br><small id="email-hint">I will only use this to reply to you.</small>
+          </p>
+
+          <p>
+            <label for="topic">Topic</label><br>
+            <select id="topic" name="topic">
+              <option value="project">Project collaboration</option>
+              <option value="internship">Internship</option>
+              <option value="other">Other</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="message">Message <span aria-hidden="true">*</span></label><br>
+            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+          </p>
+
+          <button type="submit">Send message</button>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2026 Bilwanth. All rights reserved.</p>
+    <nav aria-label="Social links">
+      <ul>
+        <li><a href="https://github.com/" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/" rel="noopener noreferrer">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </footer>
+
+</body>
+</html>
